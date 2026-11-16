@@ -1,0 +1,6 @@
+﻿# CNC Blacklisted IPs - Add one IP per line
+# Lines starting with # are comments
+# Private/local IPs are auto-blocked regardless of this file
+
+# Example:
+# 1.2.3.4

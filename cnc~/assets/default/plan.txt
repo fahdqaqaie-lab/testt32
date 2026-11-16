@@ -1,0 +1,17 @@
+  ----------------------------------------------------------
+                     Btriq - ACCOUNT PLAN                    
+  ----------------------------------------------------------
+  Username    : <<$username>>
+  Rank        : <<$rank>>
+  Concurrent  : <<$concurrent>> slots
+  Max Time    : <<$timelimit>> seconds
+  Cooldown    : <<$cooldown>> seconds
+  Expiry      : <<$expiry>>
+  ----------------------------------------------------------
+  Today Attacks  : <<$today_attacks>>
+  Total Attacks  : <<$total_attacks>>
+  Member Since   : <<$created>>
+  Last Seen      : <<$last_seen>>
+  ----------------------------------------------------------
+                     discord.gg/btt                                  
+  ----------------------------------------------------------

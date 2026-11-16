@@ -1,0 +1,32 @@
+  ----------------------------------------------------------
+                          SYSTEM                        
+  ----------------------------------------------------------
+  HELP CENTER
+  ----------------------------------------------------------
+  [GENERAL COMMANDS]
+  help                   - Show this help menu
+  credits                - System credits
+  clear / cls            - Clear screen and redraw banner
+  plan / info            - View your subscription plan
+  methods                - List all attack methods
+  ongoing                - View your active attacks
+  stop                   - Stop your active attacks
+  history                - View your attack history
+  chat                   - Join the global chatroom
+  whoami                 - View your profile
+  cooldown               - Check your cooldown status
+  passwd                 - Change your password
+  uptime                 - View server uptime
+  online                 - View online user count
+  ping                   - Check system status
+  exit                   - Disconnect session
+  ----------------------------------------------------------
+  [NETWORK TOOLS]
+  geoip <ip>             - GeoIP lookup (country, city, ISP)
+  dns <domain>           - Resolve domain to IPs
+  portscan <ip>          - Scan common ports
+  whois <ip/domain>      - PTR / A record lookup
+  tools                  - Show all network tools
+  ----------------------------------------------------------
+                     discord.gg/btt                                
+  ----------------------------------------------------------

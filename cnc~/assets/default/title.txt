@@ -1,0 +1,1 @@
+| Btriq c2 | User: <<$username>> | End In: <<$expiry>> | Ongoing: <<$attacks>>/<<$slot>> | Cd: <<$cooldown>>s |

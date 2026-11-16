@@ -1,0 +1,47 @@
+ ------------------------------------------------------------------
+   [Remiel]  COMMANDS CENTER
+ ------------------------------------------------------------------
+
+  ..: GENERAL COMMANDS :.......................................................
+   help               ..  Show this help menu
+   credits            ..  System credits
+   clear / cls / c    ..  Clear screen and redraw banner
+   plan / info        ..  View your subscription plan
+   methods            ..  List all attack methods
+   methodslist        ..  Detailed table of methods
+   ongoing            ..  View your active attacks
+   myinfo             ..  Your session details
+   stats              ..  Server statistics
+   rules              ..  System terms of use
+   geoip <ip>         ..  Lookup geo info for an IP
+   ping <host>        ..  Check host connectivity
+   dns <domain>       ..  Resolve domain name to IP (resolve)
+   portscan <host>    ..  Scan common ports of a host (scan)
+   exit / logout      ..  Disconnect session
+
+  ..: ADMIN COMMANDS :.........................................................
+   users list         ..  List all users
+   users add          ..  Create new user (wizard)
+   users info <user>  ..  Show full details of a user
+   users remove <usr> ..  Delete a user
+   users ban <user>   ..  Ban user and disconnect
+   users unban <user> ..  Unban a user
+   users kick <user>  ..  Kick user session
+   broadcast <msg>    ..  Send message to all online
+   sessions           ..  List active sessions
+   set_passwd <u> <p> (sp)  Change password
+   set_rank <u> <r>   (sr)  Set rank
+   set_time <u> <t>   (st)  Set max attack time
+   set_con <u> <c>    (sc)  Set concurrent slots
+   set_cooldown <u><c>(scd) Set cooldown seconds
+   add_day <u> <d>    (ad)  Add subscription days
+   set_day <u> <d>    (sd)  Set exact sub days
+   create_rank        ..  Create custom rank
+   ranks              ..  List custom ranks
+   delete_rank <name> ..  Delete a custom rank
+
+  ..: ATTACK USAGE :...........................................................
+   <method> <host> <port> <time>
+   Example: udp-bypass 8.8.8.8 53 120
+
+ ------------------------------------------------------------------

